@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name                  = 'iyzipay'
-  s.version               = '1.0.46'
+  s.version               = '1.0.45'
   s.platform              = Gem::Platform::RUBY
   s.required_ruby_version = '>= 1.9.3'
   s.summary               = %q{iyzipay api ruby client}
@@ -15,8 +15,8 @@ Gem::Specification.new do |s|
   s.homepage              = 'http://rubygems.org/gems/iyzipay'
   s.license               = 'MIT'
 
-  s.add_runtime_dependency 'rest-client', '~> 2.1.0'
-  s.add_runtime_dependency 'rack', '~> 2.2.4'
+  s.add_runtime_dependency 'rest-client', '~> 2.0'
+  s.add_runtime_dependency 'rack', '~> 1.6.4'
   s.add_development_dependency 'rspec', '~>3.5.0'
   s.add_development_dependency 'rspec-rails', '~>3.5.0'
   s.add_development_dependency 'nokogiri', '~>1.8.2'
