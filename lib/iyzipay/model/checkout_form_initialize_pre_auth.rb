@@ -18,6 +18,7 @@ module Iyzipay
             append_array(:basketItems, Basket.to_pki_string(request[:basketItems])).
             append(:callbackUrl, request[:callbackUrl]).
             append(:paymentSource, request[:paymentSource]).
+            append(:currency, request[:currency]).
             append(:posOrderId, request[:posOrderId]).
             append_price(:paidPrice, request[:paidPrice]).
             append(:forceThreeDS, request[:forceThreeDS]).
